@@ -1,19 +1,10 @@
-<div class="menu" id="menu">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/signups/new">Contact</a></li>
-  </ul>
-  <img id="close-menu" alt="Close" class="icon-close" src="http://s3.amazonaws.com/codecademy-content/projects/z2d/stories/close-white.svg" width="24px">
-</div>
-
 <div class="home-main">
   <a id="open-menu" href="#menu"><img alt="Open" class="icon-menu" src="http://s3.amazonaws.com/codecademy-content/projects/z2d/stories/menu-white.svg" width="24px"></a>
   <div class="container">
     <div class="row">
       <div class="content col-md-6 col-md-offset-6">
         <h1>Create and share Stories</h1>
-        <p><a class="btn btn-primary" href="about">Learn more</a></p>
+        <p><%= link_to "Learn More", about_path, class: "btn btn-primary" %></p>
       </div>
     </div>
   </div>
@@ -35,11 +26,5 @@
   <div class="container">
     <h2>Discover Stories</h2>
     <p><a class="btn btn-primary" href="about">Learn more</a></p>
-  </div>
-</div>
-
-<div class="footer">
-  <div class="container">
-    <p>A Shutterbugg Project</p>
   </div>
 </div>

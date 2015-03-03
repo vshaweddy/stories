@@ -3,14 +3,30 @@
 <head>
   <title>Stories</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300" rel="stylesheet" type="text/css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="menu" id="menu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/signups/new">Contact</a></li>
+    </ul>
+    <img id="close-menu" alt="Close" class="icon-close" src="http://s3.amazonaws.com/codecademy-content/projects/z2d/stories/close-white.svg" width="24px">
+  </div>
 
-<%= yield %>
+
+  <%= yield %>
+  <div class="footer">
+    <div class="container">
+      <p>A Shutterbugg Project</p>
+    </div>
+  </div>
+
+
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
